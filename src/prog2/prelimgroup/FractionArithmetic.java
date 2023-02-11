@@ -1,6 +1,5 @@
 package prog2.prelimgroup;
 
-
 import javax.swing.*;
 import java.text.DecimalFormat;
 
@@ -47,7 +46,8 @@ public class FractionArithmetic {
     /**This method shows the menu, returns an int which will determine which operations will be used*/
     public static int showMenu(){
         int answer = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "<html><h1 style='font-family: Calibri; font-size: 20pt;'>" + "Fraction 1: " + fraction1 + "<html><h1 style='font-family: Calibri; font-size: 20pt;'>Fraction 2: " +fraction2 +
+                "<html><h1 style='font-family: Calibri; font-size: 20pt;'>" + "Fraction 1: " + fraction1 +
+                        "<html><h1 style='font-family: Calibri; font-size: 20pt;'>Fraction 2: " +fraction2 +
                 "<html><h1 style='font-family: Calibri; font-size: 16pt; display: flex;'> <br>" +
                 "What do you want to do?   <br>       " +
                 "  1. Add fractions        <br>       " +
@@ -70,11 +70,13 @@ public class FractionArithmetic {
         int denominator;
 
         numerator = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "<html><h1 style='font-family: Calibri; font-size: 18pt; '>Enter NUMERATOR of Fraction " + choice + " : ",
+                "<html><h1 style='font-family: Calibri; font-size: 18pt; '>Enter NUMERATOR of Fraction "
+                        + choice + " : ",
                 "Fraction " + choice,
                 JOptionPane.QUESTION_MESSAGE));
         denominator = Integer.parseInt(JOptionPane.showInputDialog(null,
-                "<html><h1 style='font-family: Calibri; font-size: 18pt;'>Enter DENOMINATOR of Fraction " + choice + " : ",
+                "<html><h1 style='font-family: Calibri; font-size: 18pt;'>Enter DENOMINATOR of Fraction "
+                        + choice + " : ",
                 "Fraction " + choice,
                 JOptionPane.QUESTION_MESSAGE));
 
@@ -137,13 +139,15 @@ public class FractionArithmetic {
         int pick = 0;
         while (pick > 2 || pick < 1) {
             pick = Integer.parseInt(JOptionPane.showInputDialog(null,
-                    "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" + "Fraction 1: " + fraction1 + "<br>" + "Fraction 2: " + fraction2 + "<br><br>" +
+                    "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" + "Fraction 1: " + fraction1 +
+                            "<br>Fraction 2: " + fraction2 + "<br><br>" +
                             "Press 1 to Select Fraction 1 <br> Press 2 to Select Fraction 2", "Choose Fraction",
                     JOptionPane.INFORMATION_MESSAGE));
 
             if (pick > 2 || pick < 1) {
                 JOptionPane.showMessageDialog(null,
-                        "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" + "Please pick either 1 or 2 only."
+                        "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" +
+                                "Please pick either 1 or 2 only."
                         , "Choose Fraction",
                         JOptionPane.INFORMATION_MESSAGE);
             }
@@ -157,22 +161,26 @@ public class FractionArithmetic {
             DecimalFormat format = new DecimalFormat("##.00");
             JOptionPane.showMessageDialog(null,
                     "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" +
-                            operation + " of " + fraction1 + " and " + fraction2 +" : "+ "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + result +
+                            operation + " of " + fraction1 + " and " + fraction2 +" : "+
+                            "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + result +
                             "<html><h6 style='font-family: Calibri; font-size: 18pt; color: black;'><br><br>" +
-                            "Decimal Form: " + "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + format.format(Fraction.decimalForm(result)),
+                            "Decimal Form: " + "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" +
+                            format.format(Fraction.decimalForm(result)),
                     "Results",
                     JOptionPane.INFORMATION_MESSAGE);
         }else if (choice==5){
             if (pickFraction == 1){
                 JOptionPane.showMessageDialog(null,
                         "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" +
-                                operation + " of " + fraction1 + " : " + "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + result,
+                                operation + " of " + fraction1 + " : " +
+                                "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + result,
                         "Results",
                         JOptionPane.INFORMATION_MESSAGE);
             }else{
                 JOptionPane.showMessageDialog(null,
                         "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" +
-                                operation + " of " + fraction2 + " : " + "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + result,
+                                operation + " of " + fraction2 + " : " +
+                                "<html><h6 style='font-family: Calibri; font-size: 18pt; color: green;'>" + result,
                         "Results",
                         JOptionPane.INFORMATION_MESSAGE);
             }
