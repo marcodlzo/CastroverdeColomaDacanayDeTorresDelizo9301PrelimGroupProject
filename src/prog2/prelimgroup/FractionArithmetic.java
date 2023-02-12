@@ -46,7 +46,7 @@ public class FractionArithmetic {
         int choice = 0;
         do {
             choice= showMenu();
-            arithmetics(choice);
+            chooseArithmetic(choice);
             if (choice==7){
                 JOptionPane.showMessageDialog(null,
                         "<html><h1 style='font-family: Calibri; font-size: 18pt;'>" +
@@ -117,7 +117,7 @@ public class FractionArithmetic {
 
 
     /**This method performs the different arithmetics depending on what the user wants*/
-    public static void arithmetics(int choice){
+    public static void chooseArithmetic(int choice){
         String operation;
         switch (choice){
             case 1:
