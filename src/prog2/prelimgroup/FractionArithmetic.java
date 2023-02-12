@@ -1,3 +1,34 @@
+/**
+ Algorithm:
+
+ Input:
+ 1. Numerator and denominator of Fraction 1.
+ 2. Numerator and denominator of Fraction 2.
+
+ Process:
+ 1. The user inputs the numerator and denominator of Fraction 1.
+ 2. The user inputs the numerator and denominator of Fraction 2.
+ 3. The user picks which operations to be performed.
+ 3.1. Adds up Fraction 1 and Fraction 2.
+ 3.2. Subtracts Fraction 1 to Fraction 2.
+ 3.3. Multiplies Fraction 1 and Fraction 2.
+ 3.4. Divides Fraction 1 from Fraction 2.
+ 3.5. Reduce Fractions either Fraction 1 and 2 depending on what the user picks.
+ 3.6. Change the numerator and denominator of either Fraction 1 or Fraction 2 depending on what the user picks.
+ 4. Exits the code.
+
+
+
+ Output:
+ 1. Sum of Fraction 1 and 2 and its decimal form.
+ 2. Difference of Fraction 1 and 2 and its decimal form.
+ 3. Product of Fraction 1 and 2 and its decimal form.
+ 4. Quotient of Fraction 1 and 2 and its decimal form.
+ 5. Reduced form of either Fraction 1 or 2.
+ 6. Changed numerator and denominator of either Fraction 1 or 2.
+ */
+
+
 package prog2.prelimgroup;
 
 import javax.swing.*;
